@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Unique Home Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body class="page-fade-in">
+
+<nav class="navbar">
+    <div class="logo">UNIQUE<span>HOME</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+</nav>
+    <section class="portfolio">
+        <h2 class="section-title">Full Inventory</h2>
+        
+        <!-- Category Filter Tabs (Pro Feature) -->
+        <div class="filter-tabs">
+            <button class="tab-btn active" onclick="filterCat('all')">All</button>
+            <button class="tab-btn" onclick="filterCat('linens')">Linens & Towels</button>
+            <button class="tab-btn" onclick="filterCat('fixtures')">Fixtures</button>
+            <button class="tab-btn" onclick="filterCat('storage')">Storage & Org</button>
+        </div>
+
+        <div class="product-grid" id="full-grid">
+            <!-- 1. Linens -->
+            <div class="product-card" data-cat="linens">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?q=80&w=500')"></div>
+                <div class="product-info">
+                    <h3>Premium Bath Towel</h3>
+                    <p>100% Egyptian Cotton, Super Soft</p>
+                    <p class="price">₹1,299</p>
+                    <button class="add-btn">Add to Enquiry</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="linens">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1616627561839-07447508003b?q=80&w=500')"></div>
+                <div class="product-info">
+                    <h3>Bath Mat / Rug</h3>
+                    <p>Anti-slip Memory Foam</p>
+                    <p class="price">₹899</p>
+                    <button class="add-btn">Add to Enquiry</button>
+                </div>
+            </div>
+
+            <!-- 2. Fixtures -->
+            <div class="product-card" data-cat="fixtures">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=500')"></div>
+                <div class="product-info">
+                    <h3>Modern Sink / Washbasin</h3>
+                    <p>Ceramic Table-top Design</p>
+                    <p class="price">₹15,500</p>
+                    <button class="add-btn">Add to Enquiry</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="fixtures">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1604135398902-8973680327f2?q=80&w=500')"></div>
+                <div class="product-info">
+                    <h3>Designer Bathtub</h3>
+                    <p>Freestanding Acrylic Luxury</p>
+                    <p class="price">₹45,000</p>
+                    <button class="add-btn">Add to Enquiry</button>
+                </div>
+            </div>
+
+            <!-- 3. Accessories & Storage -->
+            <div class="product-card" data-cat="storage">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=500')"></div>
+                <div class="product-info">
+                    <h3>Shower Caddy</h3>
+                    <p>Rust-proof Stainless Steel</p>
+                    <p class="price">₹2,499</p>
+                    <button class="add-btn">Add to Enquiry</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-cat="storage">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1583947581924-860bda6a26df?q=80&w=500')"></div>
+                <div class="product-info">
+                    <h3>First Aid Kit</h3>
+                    <p>Emergency Medical Supplies</p>
+                    <p class="price">₹1,150</p>
+                    <button class="add-btn">Add to Enquiry</button>
+                </div>
+            </div>
+
+            <!-- Category: Electronics & Tech -->
+<div class="product-card" data-cat="electronics">
+    <div class="product-tag" style="background: #3498db;">AI Tech</div>
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1522338140262-f46f5913618a?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Pro-Ion Hairdryer</h3>
+        <p>Silent motor with AI temperature control.</p>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="price">₹3,499</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<div class="product-card" data-cat="electronics">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1591405351990-4726e331f141?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Smart Glass Scale</h3>
+        <p>Bluetooth Sync with Body Composition AI.</p>
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p class="price">₹2,150</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<!-- Category: Maintenance & Hygiene -->
+<div class="product-card" data-cat="hygiene">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1584622781564-1d9876a13d00?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Automatic Soap Dispenser</h3>
+        <p>Touchless infra-red sensor technology.</p>
+        <p class="price">₹1,899</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<div class="product-card" data-cat="hygiene">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Air Freshener (Smart Mist)</h3>
+        <p>Motion-activated essential oil diffuser.</p>
+        <p class="price">₹1,200</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<!-- Category: Fixtures -->
+<div class="product-card" data-cat="fixtures">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1620626011761-9963d7b59675?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Smart Vanity Mirror</h3>
+        <p>Anti-fog with adjustable LED warmth.</p>
+        <p class="price">₹7,900</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<!-- BATH LINENS -->
+<div class="product-card" data-cat="linens">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1595113333346-6060c4107bc4?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Soft Bathrobe</h3>
+        <p>Unisex Waffle-weave cotton.</p>
+        <p class="price">₹2,499</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<div class="product-card" data-cat="linens">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1620626011761-9963d7b59675?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Designer Shower Curtain</h3>
+        <p>Water-repellent aesthetic fabric.</p>
+        <p class="price">₹1,150</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<!-- FIXTURES & HARDWARE -->
+<div class="product-card" data-cat="fixtures">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1585129819171-80dc40049079?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Wall-mount Towel Rack</h3>
+        <p>Stainless steel, chrome finish.</p>
+        <p class="price">₹1,850</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<div class="product-card" data-cat="fixtures">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1615527184423-e18e80628795?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Silent Exhaust Fan</h3>
+        <p>High-speed ventilation with AI sensor.</p>
+        <p class="price">₹2,800</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<!-- ACCESSORIES & HYGIENE -->
+<div class="product-card" data-cat="hygiene">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1599423300746-b62503d9737a?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Bathroom Trash Can</h3>
+        <p>Soft-close pedal bin (10L).</p>
+        <p class="price">₹950</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<div class="product-card" data-cat="hygiene">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1621344400761-9878179a957d?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Toothbrush Holder Set</h3>
+        <p>Minimalist ceramic design.</p>
+        <p class="price">₹650</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+<div class="product-card" data-cat="hygiene">
+    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1584622781564-1d9876a13d00?q=80&w=500')"></div>
+    <div class="product-info">
+        <h3>Toilet Brush & Plunger Duo</h3>
+        <p>Ergonomic grip with hide-away stand.</p>
+        <p class="price">₹799</p>
+        <button class="add-btn">Add to Enquiry</button>
+    </div>
+</div>
+
+            <!-- Added: All Other Items (Repeat this pattern for Mirror, Cabinet, Fan, Scale, etc.) -->
+        </div>
+    </section>
+
+    <footer id="footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-about">
+            <h3>Unique Home Care</h3>
+            <p>Premium quality bathroom equipment aur household essentials ka sabse bada collection. Humara mission hai aapke ghar ko luxury aur comfort dena.</p>
+        </div>
+        <!-- Contact Section -->
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-envelope"></i> uniquehomecare@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 78754 39162</p>
+            <p><i class="fas fa-map-marker-alt"></i> ShriRam Nagar, Kunkuri Road, Shirdi, Maharashtra, India</p>
+            
+            <div class="socials">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"><a href="https://wa.me/919876543210?text=Hi%20Unique%20Home%20Care,%20I%20want%20to%20enquire%20about%20products" target="_blank"></a></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+        &copy; 2020-2026 Unique Home Care | AI Powered Portfolio | Designed by News4p.in
+    </div>
+</footer>
+    <script>
+        function filterCat(cat) {
+            let cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            // Update active button
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+window.onload = function() {
+    // URL se search term nikalna
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('search');
+
+    if (myParam) {
+        // Agar Home page se search karke aaye hain, toh auto-filter karo
+        document.getElementById('productSearch').value = myParam;
+        filterProducts(); // Ye function purane code mein hai
+    }
+    
+    // Typing effect start karo (Home page ke liye)
+    if(typeof typeEffect === "function") typeEffect();
+};
+
+    </script>
+</body>
+</html>
